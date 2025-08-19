@@ -1,7 +1,7 @@
 # Japan_drifte
 # 🌊 Drift Prediction of Wastewater near Japan Using OpenDrift
 
-![Drift Simulation Result](./results/drift_prediction_japan.png)
+![Drift Simulation Result](./Japan_drifter/results/drift_prediction_japan.png)
 
 ## 📝 Project Overview
 
@@ -27,12 +27,27 @@ The figure above illustrates a 1-month simulation from **2022-06-01 00:00 UTC to
 - `Cartopy` & `Matplotlib` for visualization
 - `netCDF4` readers for ocean/wind data
 
+## 📕 Get Data
+- **Flow field data can be downloaded from https://data.marine.copernicus.eu/product/GLOBAL_ANALYSISFORECAST_PHY_001_024/download**
+- **Wind field data can be downloaded from https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=download**
+
 ## 🚀 How to Run
 
 1. **Clone this repository:**
-
+2. **Install https://conda-forge.org/miniforge/**
 ```bash
-cd japan-ocean-drift
-python test_Japan.py
+cd Japan_drifter
+```
+3. **Create environment with the required dependencies and install OpenDrift**
+```bash
+$ mamba env create -f environment.yml
+$ conda activate opendrift
+$ pip install --no-deps -e .
+```
+4. ***This will install the env from the opendrift, You do not need to add the opendrift to the PATH.***
+5. ***Then the local conda environment can be updated with:***
+```bash 
+$ mamba env update -f environment.yml
+```
 
 
