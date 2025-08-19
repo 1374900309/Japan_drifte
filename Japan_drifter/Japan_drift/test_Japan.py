@@ -54,7 +54,7 @@ o.run(
 )
 
 # 创建输出文件夹
-output_dir = r"F:\open_drifter\result\figure3"
+output_dir = r"F:\open_drifter\result\figure4"
 os.makedirs(output_dir, exist_ok=True)
 
 # 🎞 MP4动图输出
