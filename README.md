@@ -7,7 +7,7 @@
 
 This project simulates the **drift of wastewater particles near the coastal waters of Japan** using the [OpenDrift](https://opendrift.github.io/) particle tracking framework. The goal is to estimate the dispersion pattern of potentially contaminated water over time under the influence of ocean currents and wind.
 
-The figure above illustrates a 1-month simulation from **2022-06-01 00:00 UTC to 2022-07-01 00:00 UTC**, visualizing particle trajectories and their final states after 721 simulation steps.
+The figure above illustrates a 1-month simulation from **2022-06-01 00:00 UTC to 2022-07-01 00:00 UTC**, visualizing particle trajectories and their final states after 2880 simulation steps.
 
 ## 📌 Key Features
 
@@ -50,5 +50,5 @@ $ pip install --no-deps -e .
 $ mamba env update -f environment.yml
 ```
 ## Animation results
-![Drift Simulation Result](./Japan_drifter/results/Japan_trajectory_30days.mp4)
+![Drift Simulation Result](./Japan_drifter/results/Japan_trajectory_1day.gif)
 
