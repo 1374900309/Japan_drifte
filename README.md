@@ -1,7 +1,7 @@
 # Japan_drifte
 # 🌊 Drift Prediction of Wastewater near Japan Using OpenDrift
 
-![Drift Simulation Result](./Japan_drifter/results/drift_prediction_japan.png)
+![Drift Simulation Result](./Japan_drifter/results/Japan_trajectory_30days.png)
 
 ## 📝 Project Overview
 
@@ -49,5 +49,6 @@ $ pip install --no-deps -e .
 ```bash 
 $ mamba env update -f environment.yml
 ```
-
+## Animation results
+![Drift Simulation Result](./Japan_drifter/results/Japan_trajectory_30days.mp4)
 
