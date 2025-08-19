@@ -50,7 +50,7 @@ cmap_custom = ListedColormap([
 o.run(
     time_step=timedelta(minutes=15),
     time_step_output=timedelta(hours=1),
-    duration=timedelta(days=1)
+    duration=timedelta(days=30)
 )
 
 # 创建输出文件夹
@@ -58,8 +58,8 @@ output_dir = r"F:\open_drifter\result\figure4"
 os.makedirs(output_dir, exist_ok=True)
 
 # 🎞 MP4动图输出
-animation_path = os.path.join(output_dir, "Japan_trajectory_1day.mp4")
-plt.rcParams['figure.dpi'] = 650  # 设置全局DPI
+animation_path = os.path.join(output_dir, "Japan_trajectory_1day.gif")
+plt.rcParams['figure.dpi'] = 100  # 设置全局DPI
 plt.rcParams['animation.ffmpeg_path'] = 'ffmpeg'  # 确保ffmpeg路径正确
 
 o.animation(
@@ -76,11 +76,11 @@ o.animation(
     writer='ffmpeg',  # 指定视频编码器
     fps=15,           # 帧率
     bitrate=5000,     # 比特率（更高画质）
-    dpi=650           # 直接设置DPI
+    dpi=100           # 直接设置DPI
 )
 
 # 📌 静态轨迹图（高DPI）
-trajectory_png = os.path.join(output_dir, "Japan_trajectory_1day.png")
+trajectory_png = os.path.join(output_dir, "Japan_trajectory_30day.png")
 try:
     o.plot(
         linecolor='status',
